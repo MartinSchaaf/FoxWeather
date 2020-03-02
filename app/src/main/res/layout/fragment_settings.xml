@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="fragment"
+            type="com.schaaf.foxweather.fragments.SettingsFragment" />
+
+        <variable
+            name="shared_preferences"
+            type="com.schaaf.foxweather.model.UserConfigSharedPreferences" />
+
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="13dp"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".fragments.SettingsFragment">
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/opensanscondensed_bold"
+                android:text="@string/temperature_measurements"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RadioGroup
+                android:id="@+id/temperature_radio_group"
+                uses_measurements="@{shared_preferences.getTemperatureMeasurements()}"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="16dp"
+                android:gravity="end"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <RadioButton
+                    android:id="@+id/celsius_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensanscondensed_bold"
+                    android:onClick="@{fragment}"
+                    android:text="@string/celsius" />
+
+                <RadioButton
+                    android:id="@+id/fahrenheit_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensanscondensed_bold"
+                    android:onClick="@{fragment}"
+                    android:text="@string/fahrenheit" />
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/opensanscondensed_bold"
+                android:text="@string/pressure_measurements"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+            <RadioGroup
+                android:id="@+id/pressure_radio_group"
+                uses_measurements="@{shared_preferences.getPressureMeasurements()}"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:gravity="end"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/temperature_radio_group">
+
+                <RadioButton
+                    android:id="@+id/mmHg_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensanscondensed_bold"
+                    android:onClick="@{fragment}"
+                    android:text="@string/mmhg" />
+
+                <RadioButton
+                    android:id="@+id/hPa_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensanscondensed_bold"
+                    android:onClick="@{fragment}"
+                    android:text="@string/hpa" />
+
+            </RadioGroup>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</layout>
+

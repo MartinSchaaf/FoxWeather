@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="city"
+            type="com.schaaf.foxweather.model.pojo.CityItem" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="35dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="7dp"
+            android:src="@drawable/ic_location"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView14"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/locate_icon" />
+
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@{city.name}"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView14"
+            app:layout_constraintEnd_toStartOf="@+id/favorite_button"
+            app:layout_constraintStart_toStartOf="@+id/textView14"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@{city.countryName +' ' + city.adminName1}"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/favorite_button"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+        <TextView
+            android:id="@+id/lat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{city.lat}"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/lng"
+            app:layout_constraintStart_toStartOf="@+id/lng"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/lng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{city.lng}"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imageView"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/favorite_button"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            is_favorite="@{city.isFavorite}"
+            android:button="@drawable/checkbox_favorite"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</layout>
+
+

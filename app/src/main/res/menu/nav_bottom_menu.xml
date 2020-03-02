@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/weatherInfoFragment"
+        android:icon="@drawable/ic_wb_cloudy"
+        android:title="@string/weather"/>
+    <item
+        android:id="@+id/favoriteCitiesFragment"
+        android:icon="@drawable/ic_star"
+        android:title="@string/favorite_cities" />
+    <item
+        android:id="@+id/settingsFragment"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/settings" />
+
+</menu>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/weatherInfoFragment">
+
+    <fragment
+        android:id="@+id/weatherInfoFragment"
+        android:name="com.schaaf.foxweather.fragments.WeatherInfoFragment"
+        android:label="fragment_weather_info"
+        tools:layout="@layout/fragment_weather_info" />
+
+    <fragment
+        android:id="@+id/favoriteCitiesFragment"
+        android:name="com.schaaf.foxweather.fragments.FavoriteCitiesFragment"
+        android:label="fragment_favorite_cities" />
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.schaaf.foxweather.fragments.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+</navigation>

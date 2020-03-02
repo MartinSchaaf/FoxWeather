@@ -1,0 +1,104 @@
+<resources>
+    <string name="app_name">FoxWeather</string>
+
+    <!-- Wind Degree Icons-->
+
+    <string name="wind_n"></string>
+
+    <string name="wind_ne"></string>
+
+    <string name="wind_e"></string>
+
+    <string name="wind_se"></string>
+
+    <string name="wind_s"></string>
+
+    <string name="wind_sw"></string>
+
+    <string name="wind_w"></string>
+
+    <string name="wind_nw"></string>
+
+    <!-- Main Layout Views-->
+
+    <string name="last_update_view">Последнее обновление: %1$s</string>
+
+    <string name="pressure_view_mmHg">%1$d мм.р.Ст.</string>
+
+    <string name="pressure_view_hPa">%1$d гПа</string>
+
+    <string name="humidity_view">%1$d %%</string>
+
+    <string name="wind_speed_view">%1$s м/с</string>
+
+    <string name="temp_view_celsius">%1$s%2$d°C</string>
+
+    <string name="temp_view_fahrenheit">%1$s%2$d°F</string>
+
+    <string name="city_with_country_code">%1$s (%2$s)</string>
+
+    <string name="time_0000">00:00</string>
+
+    <string name="time_0300">03:00</string>
+
+    <string name="time_0600">06:00</string>
+
+    <string name="time_0900">09:00</string>
+
+    <string name="time_1200">12:00</string>
+
+    <string name="time_1500">15:00</string>
+
+    <string name="time_1800">18:00</string>
+
+    <string name="time_2100">21:00</string>
+
+    <string name="not_available">N/A</string>
+
+    <string name="humidity_icon"></string>
+
+    <string name="barometer_icon"></string>
+
+    <string name="et_hint">Поиск</string>
+
+    <string name="favorite_cities">Избранное</string>
+
+    <string name="settings">Настройки</string>
+
+    <string name="weather">Погода</string>
+
+    <string name="temperature_measurements">Единицы изм. температуры</string>
+
+    <string name="pressure_measurements">Единицы изм. давления</string>
+
+    <string name="no_city_found">Не найдено</string>
+
+    <string name="no">Нет</string>
+
+    <string name="yes">Да</string>
+
+    <string name="there_are_no_favorite_cities_here">Нет добавленных городов</string>
+
+    <string name="celsius">°C</string>
+
+    <string name="fahrenheit">°F</string>
+
+    <string name="hpa">гПа</string>
+
+    <string name="mmhg">мм.р.Ст</string>
+
+    <string name="monday_11_12_1221">Monday,11.12.1221</string>
+
+    <string name="time_icon">time icon</string>
+
+    <string name="locate_icon">locate icon</string>
+
+    <string name="search_icon">search_icon</string>
+
+    <string name="ic_error">Ошибка соединения</string>
+
+    <string name="ic_error2">Ошибка соединения, загружены последние сохраненные данные</string>
+
+    <string name="delete_city">Удалить город?</string>
+
+</resources>

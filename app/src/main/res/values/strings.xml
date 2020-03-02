@@ -1,0 +1,106 @@
+<resources>
+    <string name="app_name">FoxWeather</string>
+
+    <!-- Wind Degree Icons-->
+
+
+    <string name="wind_n"></string>
+
+    <string name="wind_ne"></string>
+
+    <string name="wind_e"></string>
+
+    <string name="wind_se"></string>
+
+    <string name="wind_s"></string>
+
+    <string name="wind_sw"></string>
+
+    <string name="wind_w"></string>
+
+    <string name="wind_nw"></string>
+
+    <!-- Main Layout Views-->
+
+
+    <string name="last_update_view">Last update: %1$s</string>
+
+    <string name="pressure_view_mmHg">%1$d mmHg</string>
+
+    <string name="pressure_view_hPa">%1$d hPa</string>
+
+    <string name="humidity_view">%1$d %%</string>
+
+    <string name="wind_speed_view">%1$s m/s</string>
+
+    <string name="temp_view_celsius">%1$s%2$d°C</string>
+
+    <string name="temp_view_fahrenheit">%1$s%2$d°F</string>
+
+    <string name="city_with_country_code">%1$s (%2$s)</string>
+
+    <string name="time_0000">00:00</string>
+
+    <string name="time_0300">03:00</string>
+
+    <string name="time_0600">06:00</string>
+
+    <string name="time_0900">09:00</string>
+
+    <string name="time_1200">12:00</string>
+
+    <string name="time_1500">15:00</string>
+
+    <string name="time_1800">18:00</string>
+
+    <string name="time_2100">21:00</string>
+
+    <string name="not_available">N/A</string>
+
+    <string name="humidity_icon"></string>
+
+    <string name="barometer_icon"></string>
+
+    <string name="et_hint">Search</string>
+
+    <string name="favorite_cities">Favorite Cities</string>
+
+    <string name="settings">Settings</string>
+
+    <string name="weather">Weather</string>
+
+    <string name="temperature_measurements">Temperature Measurements</string>
+
+    <string name="pressure_measurements">Pressure Measurements</string>
+
+    <string name="no_city_found">No city found</string>
+
+    <string name="no">No</string>
+
+    <string name="yes">Yes</string>
+
+    <string name="there_are_no_favorite_cities_here">There are no favorite cities here</string>
+
+    <string name="celsius">°C</string>
+
+    <string name="fahrenheit">°F</string>
+
+    <string name="hpa">hPa</string>
+
+    <string name="mmhg">mmHg</string>
+
+    <string name="monday_11_12_1221">Monday,11.12.1221</string>
+
+    <string name="time_icon">time icon</string>
+
+    <string name="locate_icon">locate icon</string>
+
+    <string name="search_icon">search_icon</string>
+
+    <string name="ic_error">Internet connection error</string>
+
+    <string name="ic_error2">Internet connection error, loaded last saved data</string>
+
+    <string name="delete_city">Delete City?</string>
+
+</resources>
